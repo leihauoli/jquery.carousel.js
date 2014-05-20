@@ -101,7 +101,7 @@
 		var options = $.extend({
 			bounce: false,
 			bounceTime: 500,
-			momentum: false,
+			momentum: true,
 			loop: false
 		}, settings);
 
