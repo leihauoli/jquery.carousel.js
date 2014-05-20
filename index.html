@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example</title>
+	<style>
+		html, body, ul, li {
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			vertical-align: bottom;
+		}
+		ul {
+			list-style: none;
+		}
+		#jsi-carousel {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 600px;
+			height: 400px;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="jsi-carousel">
+		<ul class="jsc-carousel-scroller">
+			<li class="jsc-carousel-section"><img src="//dummyimage.com/600x400/333/fff.png?text=1" alt=""></li>
+			<li class="jsc-carousel-section"><img src="//dummyimage.com/600x400/555/fff.png?text=2" alt=""></li>
+			<li class="jsc-carousel-section"><img src="//dummyimage.com/600x400/777/fff.png?text=3" alt=""></li>
+			<li class="jsc-carousel-section"><img src="//dummyimage.com/600x400/999/fff.png?text=4" alt=""></li>
+			<li class="jsc-carousel-section"><img src="//dummyimage.com/600x400/bbb/fff.png?text=5" alt=""></li>
+		</ul>
+	</div>
+	
+	<script src="iscroll/build/iscroll-probe.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="jquery.carousel.js"></script>
+	<script>
+		$(window).on('load', function () {
+			$('#jsi-carousel').carousel({
+				loop: true
+			});
+		});
+	</script>
+</body>
+</html>
